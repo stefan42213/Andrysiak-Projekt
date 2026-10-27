@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+ml/.venv/
+
+# Zbiory danych pobiera się osobno (patrz ARCHITEKTURA.md); podział danych zostaje w repo
+ml/data/*
+!ml/data/splits.json
+
+# Pliki generowane podczas treningu i eksportu
+ml/outputs/*.pt
+ml/outputs/*.log
+ml/outputs/FlowerClassifier.mlpackage/
+
+# Xcode
+ios/**/xcuserdata/
+ios/build/
+DerivedData/
+
+# Materiały spoza projektu
+Pomysły na Projekty.pdf

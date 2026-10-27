@@ -1,0 +1,389 @@
+[
+ {
+  "name": "baseline",
+  "title": "CNN od zera (baseline)",
+  "n_test": 665,
+  "accuracy": 0.8285714285714286,
+  "macro_f1": 0.8234524067143404,
+  "params": 2355430,
+  "size_mb": 8.985252380371094,
+  "per_class": {
+   "daisy": {
+    "precision": 0.7475728155339806,
+    "recall": 0.8105263157894737,
+    "f1-score": 0.7777777777777778,
+    "support": 95.0
+   },
+   "dandelion": {
+    "precision": 0.823943661971831,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.8447653429602888,
+    "support": 135.0
+   },
+   "roses": {
+    "precision": 0.7976190476190477,
+    "recall": 0.6979166666666666,
+    "f1-score": 0.7444444444444445,
+    "support": 96.0
+   },
+   "sunflowers": {
+    "precision": 0.7904761904761904,
+    "recall": 0.7904761904761904,
+    "f1-score": 0.7904761904761904,
+    "support": 105.0
+   },
+   "tulips": {
+    "precision": 0.8189655172413793,
+    "recall": 0.7916666666666666,
+    "f1-score": 0.8050847457627118,
+    "support": 120.0
+   },
+   "other": {
+    "precision": 0.9739130434782609,
+    "recall": 0.9824561403508771,
+    "f1-score": 0.9781659388646288,
+    "support": 114.0
+   }
+  },
+  "confusion_matrix": [
+   [
+    77,
+    6,
+    3,
+    3,
+    6,
+    0
+   ],
+   [
+    5,
+    117,
+    1,
+    10,
+    2,
+    0
+   ],
+   [
+    9,
+    3,
+    67,
+    4,
+    11,
+    2
+   ],
+   [
+    6,
+    12,
+    2,
+    83,
+    2,
+    0
+   ],
+   [
+    6,
+    3,
+    11,
+    4,
+    95,
+    1
+   ],
+   [
+    0,
+    1,
+    0,
+    1,
+    0,
+    112
+   ]
+  ],
+  "thresholds": [
+   {
+    "threshold": 0.5,
+    "flower_coverage": 0.8239564428312159,
+    "flower_accuracy_when_shown": 0.8876651982378855,
+    "other_false_alarm": 0.008771929824561403
+   },
+   {
+    "threshold": 0.6,
+    "flower_coverage": 0.7168784029038112,
+    "flower_accuracy_when_shown": 0.9265822784810127,
+    "other_false_alarm": 0.008771929824561403
+   },
+   {
+    "threshold": 0.7,
+    "flower_coverage": 0.5989110707803993,
+    "flower_accuracy_when_shown": 0.9545454545454546,
+    "other_false_alarm": 0.008771929824561403
+   },
+   {
+    "threshold": 0.8,
+    "flower_coverage": 0.5045372050816697,
+    "flower_accuracy_when_shown": 0.9748201438848921,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.9,
+    "flower_coverage": 0.3121597096188748,
+    "flower_accuracy_when_shown": 1.0,
+    "other_false_alarm": 0.0
+   }
+  ]
+ },
+ {
+  "name": "mobilenet_frozen",
+  "title": "MobileNetV3 \u2013 zamro\u017cony backbone",
+  "n_test": 665,
+  "accuracy": 0.9428571428571428,
+  "macro_f1": 0.9418838046466288,
+  "params": 4209718,
+  "size_mb": 16.058799743652344,
+  "per_class": {
+   "daisy": {
+    "precision": 0.9381443298969072,
+    "recall": 0.9578947368421052,
+    "f1-score": 0.9479166666666666,
+    "support": 95.0
+   },
+   "dandelion": {
+    "precision": 0.9696969696969697,
+    "recall": 0.9481481481481482,
+    "f1-score": 0.9588014981273408,
+    "support": 135.0
+   },
+   "roses": {
+    "precision": 0.9230769230769231,
+    "recall": 0.875,
+    "f1-score": 0.8983957219251337,
+    "support": 96.0
+   },
+   "sunflowers": {
+    "precision": 0.9519230769230769,
+    "recall": 0.9428571428571428,
+    "f1-score": 0.9473684210526315,
+    "support": 105.0
+   },
+   "tulips": {
+    "precision": 0.875,
+    "recall": 0.9333333333333333,
+    "f1-score": 0.9032258064516129,
+    "support": 120.0
+   },
+   "other": {
+    "precision": 1.0,
+    "recall": 0.9912280701754386,
+    "f1-score": 0.9955947136563876,
+    "support": 114.0
+   }
+  },
+  "confusion_matrix": [
+   [
+    91,
+    2,
+    1,
+    0,
+    1,
+    0
+   ],
+   [
+    3,
+    128,
+    0,
+    3,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    84,
+    0,
+    11,
+    0
+   ],
+   [
+    1,
+    0,
+    2,
+    99,
+    3,
+    0
+   ],
+   [
+    1,
+    2,
+    4,
+    1,
+    112,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    0,
+    113
+   ]
+  ],
+  "thresholds": [
+   {
+    "threshold": 0.5,
+    "flower_coverage": 0.911070780399274,
+    "flower_accuracy_when_shown": 0.9641434262948207,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.6,
+    "flower_coverage": 0.8493647912885662,
+    "flower_accuracy_when_shown": 0.9807692307692307,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.7,
+    "flower_coverage": 0.7912885662431942,
+    "flower_accuracy_when_shown": 0.9885321100917431,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.8,
+    "flower_coverage": 0.7132486388384754,
+    "flower_accuracy_when_shown": 0.9923664122137404,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.9,
+    "flower_coverage": 0.5117967332123412,
+    "flower_accuracy_when_shown": 0.9964539007092199,
+    "other_false_alarm": 0.0
+   }
+  ]
+ },
+ {
+  "name": "mobilenet_finetuned",
+  "title": "MobileNetV3 \u2013 fine-tuning",
+  "n_test": 665,
+  "accuracy": 0.9548872180451128,
+  "macro_f1": 0.9534971130566411,
+  "params": 4209718,
+  "size_mb": 16.058799743652344,
+  "per_class": {
+   "daisy": {
+    "precision": 0.9381443298969072,
+    "recall": 0.9578947368421052,
+    "f1-score": 0.9479166666666666,
+    "support": 95.0
+   },
+   "dandelion": {
+    "precision": 0.9705882352941176,
+    "recall": 0.9777777777777777,
+    "f1-score": 0.974169741697417,
+    "support": 135.0
+   },
+   "roses": {
+    "precision": 0.8932038834951457,
+    "recall": 0.9583333333333334,
+    "f1-score": 0.9246231155778895,
+    "support": 96.0
+   },
+   "sunflowers": {
+    "precision": 0.9797979797979798,
+    "recall": 0.9238095238095239,
+    "f1-score": 0.9509803921568627,
+    "support": 105.0
+   },
+   "tulips": {
+    "precision": 0.9478260869565217,
+    "recall": 0.9083333333333333,
+    "f1-score": 0.9276595744680851,
+    "support": 120.0
+   },
+   "other": {
+    "precision": 0.991304347826087,
+    "recall": 1.0,
+    "f1-score": 0.9956331877729258,
+    "support": 114.0
+   }
+  },
+  "confusion_matrix": [
+   [
+    91,
+    2,
+    1,
+    0,
+    1,
+    0
+   ],
+   [
+    2,
+    132,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    92,
+    0,
+    4,
+    0
+   ],
+   [
+    3,
+    2,
+    2,
+    97,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    8,
+    1,
+    109,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    114
+   ]
+  ],
+  "thresholds": [
+   {
+    "threshold": 0.5,
+    "flower_coverage": 0.9346642468239564,
+    "flower_accuracy_when_shown": 0.974757281553398,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.6,
+    "flower_coverage": 0.8911070780399274,
+    "flower_accuracy_when_shown": 0.9857433808553971,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.7,
+    "flower_coverage": 0.8421052631578947,
+    "flower_accuracy_when_shown": 0.9935344827586207,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.8,
+    "flower_coverage": 0.7568058076225045,
+    "flower_accuracy_when_shown": 0.9976019184652278,
+    "other_false_alarm": 0.0
+   },
+   {
+    "threshold": 0.9,
+    "flower_coverage": 0.43920145190562615,
+    "flower_accuracy_when_shown": 1.0,
+    "other_false_alarm": 0.0
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+# Python 3.12. torch jest przypięty do 2.7.0, bo to najnowsza wersja
+# przetestowana z coremltools 9.0 (nowsze dają ostrzeżenia i ryzyko błędów konwersji).
+torch==2.7.0
+torchvision==0.22.0
+coremltools==9.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+numpy==2.5.4
+pillow==12.3.0

@@ -1,0 +1,12 @@
+{
+ "n_test": 665,
+ "top1_agreement": 1.0,
+ "torch_accuracy": 0.9548872180451128,
+ "coreml_accuracy": 0.9548872180451128,
+ "max_prob_diff": 0.016554921865463257,
+ "size_mb": 8.129914283752441,
+ "mac_latency_ms": {
+  "cpu": 1.9311649998417124,
+  "all_neural_engine": 0.42116833006730303
+ }
+}
