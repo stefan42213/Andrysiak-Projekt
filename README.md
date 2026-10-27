@@ -25,7 +25,7 @@ ios/   aplikacja iOS (SwiftUI, AVFoundation, Vision, Core ML)
 
 ## Dokumentacja
 
-- [Dokumentacja FlowerCam.pdf](Dokumentacja%20FlowerCam.pdf) – pełna dokumentacja projektu
+- [Dawid_Stefanski_122429_Dokumentacja.pdf](Dawid_Stefanski_122429_Dokumentacja.pdf) – pełna dokumentacja projektu
 - [ARCHITEKTURA.md](ARCHITEKTURA.md) – architektura i instrukcja uruchomienia
 - [SPECYFIKACKA DLA PROJEKTU.docx](SPECYFIKACKA%20DLA%20PROJEKTU.docx) – specyfikacja projektu
 - [ml/outputs/RAPORT.md](ml/outputs/RAPORT.md) – szczegółowe wyniki, wykresy w `ml/outputs/`
